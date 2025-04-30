@@ -1,3 +1,14 @@
+
+# implementación de excepciones 
+def excepciones(n):
+    try:
+        int(n)
+    except ValueError:
+        return "Error: El valor introducido no es un número entero."
+    if int(n) < 0:
+        raise ValueError("Error: El número debe ser mayor o igual a 0.")
+        
+
 # Se crean dos funciones para calcular la serie de Fibonacci. Se introduce la posición y se muestra el número correspondiente a esa posición.
 def fibonacci_iterativo(n):
     if n <= 0:
